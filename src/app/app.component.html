@@ -1,10 +1,10 @@
 
 	<nav class="nav">
-		<div class="nav__title">Site Title</div>
+		<div class="nav__title"routerLink="/" [routerLinkActiveOptions]="{exact: true}"
+        routerLinkActive="active">Angular MasTi</div>
 		<ul class="nav__list">
-			<li class="nav__item">Services</li>
-			<li class="nav__item">About Us</li>
-			<li class="nav__item">Blog</li>
+			<li class="nav__item"routerLink="/about" routerLinkActive="active">About Us</li>
+			<li class="nav__item"routerLink="/blog" routerLinkActive="active">Blogs</li>
 		</ul>
 	</nav>
 <div style="display: flex;">
