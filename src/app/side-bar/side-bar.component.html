@@ -1,0 +1,16 @@
+<div class="navigation">
+  <ul>
+    <ng-container *ngFor="let item of listofSideBarItems">
+      <li class="list" routerLink="{{item.route}}" [routerLinkActiveOptions]="{exact: item.exact?true:false}"
+        routerLinkActive="active">
+        <a>
+          <span class="icon">
+            <i class="fa {{item.icon}}" *ngIf="item.isIcon"></i>
+            <img src="{{item.icon}}" alt="{{item.name}}" *ngIf="!item.isIcon">
+          </span>
+          <span class="title">{{item.name}}</span>
+        </a>
+      </li>
+    </ng-container>
+  </ul>
+</div>

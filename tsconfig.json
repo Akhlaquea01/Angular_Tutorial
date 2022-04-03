@@ -16,6 +16,8 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "esModuleInterop": true, // allows default imports from modules with no default export.
+    "resolveJsonModule": true, // allows for importing, extracting types from .json files.
     "target": "es2017",
     "module": "es2020",
     "lib": [
