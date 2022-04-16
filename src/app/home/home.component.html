@@ -11,7 +11,7 @@
 
   <div [ngClass]="{'rowList': isListView,'rowGrid': !isListView}">
     <div #grid class="column" *ngFor="let data of topicDetails">
-      <h2>{{data.title}}</h2>
+      <h2 style="color: black;">{{data.title}}</h2>
       <p>{{data.description}}</p>
     </div>
   </div>
