@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  isListView!: boolean;;
+  isListView!: boolean;
   topicDetails: Array<any> = [
     {
       title: 'Angular',
@@ -29,10 +29,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  listView() { 
+  public listView():void { 
     this.isListView = true;
   }
-  gridView() { 
+  public gridView():void { 
     this.isListView = false;
   }
 }
