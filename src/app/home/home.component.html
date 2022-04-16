@@ -1,5 +1,18 @@
-<section style="margin-left: 1rem;">
-   hi
+<section style="margin-left: 1rem">
+  <div id="btnContainer">
+    <button class="btn" (click)="listView()">
+      <i class="fa fa-bars"></i> List
+    </button>
+    <button class="btn active" (click)="gridView()">
+      <i class="fa fa-th-large"></i> Grid
+    </button>
+  </div>
+  <br />
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quidem consectetur mollitia praesentium repellendus officia magnam rem, maxime ut et aperiam quas eius nisi ad libero dolorum, laboriosam eos est?
+  <div [ngClass]="{'rowList': isListView,'rowGrid': !isListView}">
+    <div #grid class="column" *ngFor="let data of topicDetails">
+      <h2>{{data.title}}</h2>
+      <p>{{data.description}}</p>
+    </div>
+  </div>
 </section>
