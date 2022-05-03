@@ -1,0 +1,22 @@
+<section style="margin-left: 3rem;">
+  <table border="1">
+    <tr>
+      <td *ngFor="let title of header; first as isFirst">
+        {{ isFirst ? ' ' : $any(title).day }}
+      </td>
+    </tr>
+  
+    <tr *ngFor="let row of rows,index as i">
+        <td *ngFor="let col of row">
+          <ng-container *ngIf="col.date">
+            {{ col.date }}
+          </ng-container>
+          <ng-container *ngIf="!col.date">
+            <input type="text" [(ngModel)]="col.val">
+            <!-- {{col | json}} -->
+          </ng-container>
+        </td>
+    </tr>
+  </table>
+  <button (click)="constructTable()"></button>
+</section>
