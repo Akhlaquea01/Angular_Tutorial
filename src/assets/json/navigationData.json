@@ -11,19 +11,19 @@
       "name": "About",
       "isIcon": true,
       "icon": "fa-info",
-      "route": "Link1"
+      "route": "about"
     },
     {
       "name": "Contact",
       "isIcon": true,
       "icon": "fa-phone",
-      "route": "Link2"
+      "route": "contact"
     },
     {
       "name": "About Angular",
       "isIcon": false,
       "icon": "assets/icons/angular.svg",
-      "route": "Link3"
+      "route": "about-angular"
     }
   ]
 }

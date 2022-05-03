@@ -1,0 +1,58 @@
+.rowGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.rowList {
+  display: grid;
+  padding: 10px;
+}
+.column {
+  background: #fff;
+  // border: none;
+  border-radius: 2rem;
+  border-style: outset;
+  margin: 0.5rem;
+  color: #000;
+  font-size: 1.2rem;
+  text-align: center;
+  &:hover {
+    box-shadow: 0px 2px 10px 5px #97b1bf;
+    color: #4ff10f;
+  }
+}
+.active {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #97b1bf;
+  color: #4ff10f;
+}
+.btn {
+  position: relative;
+  background-color: #fff;
+  border: none;
+  padding: 20px;
+  width: auto;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  &:hover {
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px #97b1bf;
+    color: #000;
+  }
+
+  &:after {
+    content: "";
+    background: #4ff10f;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+}
